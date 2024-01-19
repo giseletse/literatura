@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado</title>
+  <style>
+   
+    body {
+   
+      font-family: Arial, sans-serif;
+      background-color: #a7c2dd;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="radio"] {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #385a7c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      text-align: center;
+    }
+    #pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6, #pergunta7, #pergunta8, #pergunta9, #pergunta10, #pergunta11, #pergunta12, #pergunta13, #pergunta14, #pergunta15, #pergunta16, #pergunta17, #pergunta18, #pergunta19, #pergunta20{
+       
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.83);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .resultado {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .resposta-correta {
+      color: rgb(22, 205, 129);
+    }
+    .resposta-incorreta {
+      color: rgb(255, 66, 66);
+    }
+    #ir {
+        margin-left: 40%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+       
+    }
+  </style>
+</head>
+<body>
+ 
+  
+      <form id="myForm">
+
+            <h1>Literatura</h1>
+        <h2>pré-modernismo, Romantismo e modernismo</h2>
+        
+         
+        
+            <div id="pergunta1">
+        
+              <label data-resposta-correta="c">1. (Enem 2012) Desde dezoito anos que o tal patriotismo
+        lhe absorvia e por ele fizera a tolice de estudar inutilidades.
+        Que lhe importavam os rios? Eram grandes? Pois que
+        fossem... Em que lhe contribuía para a felicidade saber o
+        nome dos heróis do Brasil? Em nada... O importante é que
+        ele tivesse sido feliz. Foi? Não. Lembrou-se das coisas do
+        tupi, do folk-lore, das suas tentativas agrícolas... Restava
+        disso tudo em sua alma uma satisfação? Nenhuma!<br>
+        Nenhuma!
+        O tupi encontrou a incredulidade geral, o riso, a mofa, o
+        escárnio; e levou-o à loucura. Uma decepção. E a
+        agricultura? Nada. As terras não eram ferazes e ela não era
+        fácil como diziam os livros. Outra decepção. E, quando o
+        seu patriotismo se fizera combatente, o que achara?
+        Decepções. Onde estava a doçura de nossa gente? Pois ele a
+        viu combater como feras? Pois não a via matar prisioneiros,
+        inúmeros? Outra decepção. A sua vida era uma decepção,
+        uma série, melhor, um encadeamento de decepções.
+        A pátria que quisera ter era um mito; um fantasma criado
+        por ele no silêncio de seu gabinete.<br>
+        BARRETO, L. Triste fim de Policarpo Quaresma.
+        Disponível em: www.dominiopublico.gov.br. Acesso em: 8
+        nov. 2011.<br>
+        O romance Triste fim de Policarpo Quaresma, de Lima
+        Barreto, foi publicado em 1911. No fragmento destacado, a
+        reação do personagem aos desdobramentos de suas
+        iniciativas patrióticas evidencia que</label>
+        
+              <label for="a1"><input type="radio" id="a1" name="resposta1" value="a"> a) A dedicação de Policarpo Quaresma ao conhecimento da
+        natureza brasileira levou-o a estudar inutilidades, mas
+        possibilitou-lhe uma visão mais ampla do país.</label>
+        
+              <label for="b1"><input type="radio" id="b1" name="resposta1" value="b">b) A curiosidade em relação aos heróis da pátria levou-o ao
+        ideal de prosperidade e democracia que o personagem
+        encontra no contexto republicano.</label>
+        
+              <label for="c1"><input type="radio" id="c1" name="resposta1" value="c">c) A construção de uma pátria a partir de elementos míticos,
+        como a cordialidade do povo, a riqueza do solo e a
+        pureza linguística, conduz à frustração ideológica.</label>
+        
+              <label for="d1"><input type="radio" id="d1" name="resposta1" value="d">d) A propensão do brasileiro ao riso, ao escárnio, justifica a
+        reação de decepção e desistência de Policarpo Quaresma,
+        que prefere resguardar-se em seu gabinete.</label>
+        
+              <label for="e1"><input type="radio" id="e1" name="resposta1" value="e">e) A certeza da fertilidade da terra e da produção agrícola
+        incondicional faz parte de um projeto ideológico
+        salvacionista, tal como foi difundido na época do autor.</label>
+        
+              <div class="resultado" id="resultado1"></div>
+        
+              <button type="button" onclick="verificarRespostasIndividual(1, 'c')">Verificar Resposta</button>
+        
+            </div>
+        
+         
+        
+            <div id="pergunta2">
+        
+              <label data-resposta-correta="d">2. (Enem 2010) Texto I<br>
+        Eu amo a rua. Esse sentimento de natureza toda
+        íntima não vos seria revelado por mim se não julgasse, e
+        razões não tivesse para julgar, que este amor assim absoluto
+        e assim exagerado e partilhado por todos vos. Nós somos
+        irmãos, nós nos sentimos parecidos e iguais; nas cidades,
+        nas aldeias, nos povoados, não porque soframos, com a dor
+        e os desprazeres, a lei e a polícia, mas porque nos une,
+        nivela e agremia o amor da rua. E este mesmo o sentimento
+        imperturbável e indissolúvel, o único que, como a própria
+        vida, resiste as idades e as épocas.<br>
+        RIO. J. A rua. In: A alma encantadora das ruas. São Paulo:
+        Companhia das Letras, 2008 (fragmento).
+        Texto II<br>
+        A rua dava-lhe uma forca de fisionomia, mais
+        consciência dela. Como se sentia estar no seu reino, na
+        região em que era rainha e imperatriz. O olhar cobiçoso dos
+        homens e o de inveja das mulheres acabavam o sentimento
+        de sua personalidade, exaltavam-no ate. Dirigiu-se para a
+        rua do Catete com o seu passo miúdo e solido. [...] No
+        caminho trocou cumprimento com as raparigas pobres de
+        uma casa de cômodos da vizinhança.<br>
+        [...] E debaixo dos olhares maravilhados das
+        pobres raparigas, ela continuou o seu caminho,
+        arrepanhando a saia, satisfeita que nem uma duquesa
+        atravessando os seus domínios.<br>
+        BARRETO, L. Um e outro. in: Clara dos Anjos. Rio de
+        Janeiro: Editora Mérito (fragmento).<br>
+        A experiência urbana e um tema recorrente em crônicas,
+        contos e romances do final do século XIX e início do XX,
+        muitos dos quais elegem a rua para explorar essa
+        experiência. Nos fragmentos I e II, a rua é vista,
+        respectivamente, como lugar que</label>
+        
+             
+        
+              <label for="a2"><input type="radio" id="a2" name="resposta2" value="a">a) desperta sensações contraditórias e desejo de
+        reconhecimento.</label>
+        
+              <label for="b2"><input type="radio" id="b3" name="resposta2" value="b">b) favorece o cultivo da intimidade e a exposição dos dotes
+        físicos.</label>
+        
+              <label for="c2"><input type="radio" id="c2" name="resposta2" value="c">c) possibilita vínculos pessoais duradouros e encontros
+        casuais.</label>
+        
+              <label for="d2"><input type="radio" id="d2" name="resposta2" value="d">d) propicia o sentido de comunidade e a exibição pessoal.</label>
+        
+              <label for="e2"><input type="radio" id="e2" name="resposta2" value="e">e) promove o anonimato e a segregação social.</label>
+        
+         
+        
+              <div class="resultado" id="resultado2"></div>
+        
+            <div class="centro"><button type="button" onclick="verificarRespostasIndividual(2, 'd')">Verificar Resposta</button></div>
+        
+            </div>
+        
+         
+        
+         
+        
+            <div id="pergunta3">
+        
+              <label data-resposta-correta="d"> 3. (Enem 2010) Negrinha<br>
+        Negrinha era uma pobre órfã de sete anos. Preta?
+        Não; fusca, mulatinha escura, de cabelos ruços e olhos
+        assustados.<br>
+        Nascera na senzala, de mãe escrava, e seus
+        primeiros anos vivera-os pelos cantos escuros da cozinha,
+        sobre velha esteira e trapos imundos. Sempre escondida,
+        que a patroa não gostava de crianças.<br>
+        Excelente senhora, a patroa. Gorda, rica, dona do
+        mundo, amimada dos padres, com lugar certo na igreja e
+        camarote de luxo reservado no céu. Entaladas as banhas no
+        trono (uma cadeira de balanço na sala de jantar), ali
+        bordava, recebia as amigas e o vigário, dando audiências,
+        discutindo o tempo. Uma virtuosa senhora em suma –
+        “dama de grandes virtudes apostólicas, esteio da religião e
+        da moral”, dizia o reverendo.<br>
+        Ótima, a dona Inácia.<br>
+        Mas não admitia choro de criança. Ai! Punha-lhe
+        os nervos em carne viva.<br>
+        [...]<br>
+        A excelente dona Inácia era mestra na arte de
+        judiar de crianças. Vinha da escravidão, fora senhora de
+        escravos – e daquelas ferozes, amigas de ouvir cantar o
+        bolo e estalar o bacalhau. Nunca se afizera ao regime novo
+        – essa indecência de negro igual.<br>
+        LOBATO, M. Negrinha. In: MORICONE, I. Os cem
+        melhores contos brasileiros do século. Rio de Janeiro:
+        Objetiva, 2000 (fragmento).<br>
+        A narrativa focaliza um momento histórico-social de
+        valores contraditórios. Essa contradição infere-se, no
+        contexto, pela</label>
+        
+              <label for="a3"><input type="radio" id="a3" name="resposta3" value="a">a) falta de aproximação entre a menina e a senhora,
+        preocupada com as amigas.</label>
+        
+              <label for="b3"><input type="radio" id="b3" name="resposta3" value="b">b) receptividade da senhora para com os padres, mas
+        deselegante para com as beatas.</label>
+        
+              <label for="c3"><input type="radio" id="c3" name="resposta3" value="c">c) ironia do padre a respeito da senhora, que era perversa
+        com as crianças.</label>
+        
+              <label for="d3"><input type="radio" id="d3" name="resposta3" value="d">d) resistência da senhora em aceitar a liberdade dos negros,
+        evidenciada no final do texto.</label>
+        
+              <label for="e3"><input type="radio" id="e3" name="resposta3" value="e">e) rejeição aos criados por parte da senhora, que preferia
+        tratá-los com castigos.</label>
+        
+              <div class="resultado" id="resultado3"></div>
+        
+             <div class="centro"><button type="button" onclick="verificarRespostasIndividual(3, 'd')">Verificar Resposta</button></div>
+        
+            </div>
+        
+         
+        
+            <div id="pergunta4">
+        
+                <label data-resposta-correta="b">4. (Enem 2ª aplicação 2010)<br>
+         6Viajam de bonde silenciosamente. Devia ser
+        quase uma hora, 1pois o veículo já se enchia do público
+        especial dos domingos.<br>
+        2Eram meninas do povo envolvidas nos seus
+        vestidos empoados com suas fitinhas cor-de-rosa ao cabelo
+        e o leque indispensável; eram as baratas casemiras claras
+        dos ternos, [...] eram as velhas mães, prematuramente
+        envelhecidas com a maternidade frequente, 7a acompanhar
+        a escadinha dos filhos, ao lado dos maiores, ainda moços,
+        que fumavam os mais compactos charutos do mercado —
+        era dessa gente que se enchia o bonde e se via pelas
+        calçadas em direção aos jardins, aos teatros em matiné, aos
+        arrabaldes e às praias.<br>
+        3Era enfim o povo, o povo variegado da minha
+        terra. 4As napolitanas baixas com seus vestidos de roda e
+        suas africanas, as portuguesas coradas e fortes, caboclas,
+        mulatas e pretas — era tudo sim preto, às vezes todos
+        exemplares em bando, às vezes separados, 8que a viagem de
+        bonde me deu a ver.<br>
+        E muito me fez meditar o seu semblante alegre, a
+        sua força prolífica, atestada pela cauda de filhos que
+        arrastavam, a sua despreocupação nas anemias que havia,
+        em nada significando a preocupação de seu verdadeiro
+        estado — 5e tudo isso muito me obrigou a pensar sobre o
+        destino daquela gente.<br>
+        BARRETO, Lima. O domingo. Contos completos de Lima
+        Barreto.<br>
+        Organização e introdução de Lília Moritz Schwarcz. São
+        Paulo: Companhia
+        das Letras, 2010. p. 589.<br>
+         Sobre os elementos linguísticos do texto, está correto o que se afirma em</label>
+        
+                <label for="a4"><input type="radio" id="a4" name="resposta4" value="a">a) A forma verbal “Viajam” (ref.6) refere-se a um sujeito
+        não explicitado na sequência textual. </label>
+        
+         
+        
+                <label for="b4"><input type="radio" id="b4" name="resposta4" value="b">b) O termo em negrito, em “a acompanhar a escadinha dos
+        filhos” (ref.7), apresenta um valor quantitativo.</label>
+        
+                <label for="c4"><input type="radio" id="c4" name="resposta4" value="c">c) A palavra enfim, em “Era enfim o povo” (ref.3), constitui
+        uma palavra denotativa de finalidade.</label>
+        
+                <label for="d4"><input type="radio" id="d4" name="resposta4" value="d">d) As formas pronominais “seus” e “suas” (ref.2) denotam
+        posse de sujeitos distintos no contexto da frase.</label>
+        
+                <label for="e4"><input type="radio" id="e4" name="resposta4" value="e">e) O vocábulo em destaque, em “que a viagem de bonde
+        me deu a ver” (ref.8), pode ser permutado por porque,
+        preservando-se o mesmo sentido do contexto.</label>
+        
+                <div class="resultado" id="resultado4"></div>
+        
+                <button type="button" onclick="verificarRespostasIndividual(4, 'b')">Verificar Resposta</button>
+        
+              </div>
+        
+         
+        
+              <div id="pergunta5">
+        
+                <label data-resposta-correta="d">5. (Enem cancelado 2009) Texto 1<br>
+        O Morcego<\br>
+        Meia-noite. Ao meu quarto me recolho.<br>
+        Meu Deus! E este morcego! E, agora, vede:<br>
+        Na bruta ardência orgânica da sede,<br>
+        Morde-me a goela ígneo e escaldante molho.<br>
+        “Vou mandar levantar outra parede...”<br>
+        Digo. Ergo-me a tremer. Fecho o ferrolho<br>
+        E olho o teto. E vejo-o ainda, igual a um olho,<br>
+        Circularmente sobre a minha rede!<br>
+        Pego de um pau. Esforços faço. Chego<br>
+        A tocá-lo. Minh’alma se concentra.<br>
+        Que ventre produziu tão feio parto?!<br>
+        A Consciência Humana é este morcego!<br>
+        Por mais que a gente faça, à noite, ele entra<br>
+        Imperceptivelmente em nosso quarto!<br>
+        ANJOS, A. Obra completa. Rio de Janeiro:<br>
+        Aguilar, 1994.<br>
+        Texto 2<br>
+        O lugar-comum em que se converteu a imagem de um
+        poeta doentio, com o gosto do macabro e do horroroso,
+        dificulta que se veja, na obra de Augusto dos Anjos, o olhar
+        clínico, o comportamento analítico, até mesmo certa frieza,
+        certa impessoalidade científica.<br>
+        CUNHA, F. Romantismo e modernidade na poesia. Rio de
+        Janeiro: Cátedra, 1988 (adaptado).<br>
+        Em consonância com os comentários do texto 2 acerca da
+        poética de Augusto dos Anjos, o poema O morcego
+        apresenta-se, enquanto percepção do mundo, como forma
+        estética capaz de</label>
+        
+                </label>
+        
+                <label for="a5"><input type="radio" id="a5" name="resposta5" value="a">a) reencantar a vida pelo mistério com que os fatos banais
+        são revestidos na poesia.</label>
+        
+                <label for="b5"><input type="radio" id="b5" name="resposta5" value="b">b) expressar o caráter doentio da sociedade moderna por
+        meio do gosto pelo macabro.</label>
+        
+                <label for="c5"><input type="radio" id="c5" name="resposta5" value="c">c) representar realisticamente as dificuldades do cotidiano
+        sem associá-lo a reflexões de cunho existencial.</label>
+        
+                <label for="d5"><input type="radio" id="d5" name="resposta5" value="d">d) abordar dilemas humanos universais a partir de um ponto
+        de vista distanciado e analítico acerca do cotidiano.</label>
+        
+                <label for="e5"><input type="radio" id="e5" name="resposta5" value="e">e) conseguir a atenção do leitor pela inclusão de elementos
+        das histórias de horror e suspense na estrutura lírica da
+        poesia.</label>
+        
+                <div class="resultado" id="resultado5"></div>
+        
+                <button type="button" onclick="verificarRespostasIndividual(5, 'd')">Verificar Resposta</button>
+        
+                </div>
+        
+                <div id="pergunta6">
+        
+                    <label data-resposta-correta="d">6. (Enem 2010) Soneto<br>
+        <p>Já da morte o palor me cobre o rosto,<br>
+        Nos lábios meus o alento desfalece,<br>
+        Surda agonia o coração fenece,<br>
+        E devora meu ser mortal desgosto!<br>
+    </p>
+    <p>
+        Do leito embalde no macio encosto<br>
+        Tento o sono reter!... já esmorece<br>
+        O corpo exausto que o repouso esquece...<br>
+        Eis o estado em que a mágoa me tem posto!<br>
+    </p>
+    <p>  
+        O adeus, o teu adeus, minha saudade,<br>
+        Fazem que insano do viver me prive<br>
+        E tenha os olhos meus na escuridade.<br>
+    </p>
+    <p> 
+        Dá-me a esperança com que o ser mantive!<br>
+        Volve ao amante os olhos por piedade,<br>
+        Olhos por quem viveu quem já não vive!<br>
+    </p>   
+        AZEVEDO, A. Obra completa. Rio de Janeiro: Nova
+        Aguilar, 2000.<br>
+        O núcleo temático do soneto citado é típico da segunda
+        geração romântica, porém configura um lirismo que o
+        projeta para alem desse momento especifico. O fundamento
+        desse lirismo é
+         </label>
+        
+         
+        
+                        <label for="a6"><input type="radio" id="a6" name="resposta6" value="a">a) a angústia alimentada pela constatação da
+        irreversibilidade da morte.</label>
+        
+                        <label for="b6"><input type="radio" id="b6" name="resposta6" value="b">b) a melancolia que frustra a possibilidade de reação diante
+        da perda.</label>
+        
+                        <label for="c6"><input type="radio" id="c6" name="resposta6" value="c">c) o descontrole das emoções provocado pela autopiedade.</label>
+        
+                        <label for="d6"><input type="radio" id="d6" name="resposta6" value="d">d) o desejo de morrer como alívio para a desilusão amorosa.</label>
+        
+                        <label for="e6"><input type="radio" id="e6" name="resposta6" value="e">e) o gosto pela escuridão como solução para o sofrimento.</label>
+        
+                        <div class="resultado" id="resultado5"></div>
+        
+                        <button type="button" onclick="verificarRespostasIndividual(6, 'd')">Verificar Resposta</button>
+        
+                    </div>
+        
+                    <div id="pergunta7">
+        
+                        <label data-resposta-correta="b">7. (Enem 2ª aplicação 2010) Texto I<br>
+        Se eu tenho de morrer na flor dos anos,<br>
+        Meu Deus! não seja já;<br>
+        Eu quero ouvir na laranjeira, à tarde,<br>
+        Cantar o sabiá!<br>
+        Meu Deus, eu sinto e bem vês que eu morro<br>
+        Respirando esse ar;<br>
+        Faz que eu viva, Senhor! dá-me de novo<br>
+        Os gozos do meu lar!<br>
+        Dá-me os sítios gentis onde eu brincava<br>
+        Lá na quadra infantil;<br>
+        Dá que eu veja uma vez o céu da pátria,<br>
+        O céu de meu Brasil!<br>
+        Se eu tenho de morrer na flor dos anos,<br>
+        Meu Deus! Não seja já!<br>
+        Eu quero ouvir cantar na laranjeira, à tarde,<br>
+        Cantar o sabiá!<br>
+        ABREU, C. Poetas românticos brasileiros. São Paulo:
+        Scipione, 1993.<br>
+        Texto II
+        A ideologia romântica, argamassada ao longo do século
+        XVIII e primeira metade do século XIX, introduziu-se em
+        1836. Durante quatro decênios, imperaram o “eu”, a
+        anarquia, o liberalismo, o sentimentalismo, o nacionalismo,
+        através da poesia, do romance, do teatro e do jornalismo
+        (que fazia sua aparição nessa época).
+        MOISÉS, M. A literatura brasileira atrav<br>és dos textos. São
+        Paulo: Cultrix, 1971 (fragmento).<br>
+        De acordo com as considerações de Massaud Moisés no
+        Texto II, o Texto I centra-se</label>
+        
+                        </label>
+        
+                        <label for="a7"><input type="radio" id="a7" name="resposta7" value="a">a) no imperativo do “eu”, reforçando a ideia de que estar
+        longe do Brasil é uma forma de estar bem, já que o país
+        sufoca o eu lírico.</label>
+        
+                        <label for="b7"><input type="radio" id="b7" name="resposta7" value="b">b) no nacionalismo, reforçado pela distância da pátria e
+        pelo saudosismo em relação à paisagem agradável onde
+        o eu lírico vivera a infância.</label>
+        
+                        <label for="c7"><input type="radio" id="c7" name="resposta7" value="c">c) na liberdade formal, que se manifesta na opção por
+        versos sem métrica rigorosa e temática voltada para o
+        nacionalismo.</label>
+        
+                        <label for="d7"><input type="radio" id="d7" name="resposta7" value="d">d) no fazer anárquico, entendida a poesia como negação do
+        passado e da vida, seja pelas opções formais, seja pelos
+        temas.</label>
+        
+                        <label for="e7"><input type="radio" id="e7" name="resposta7" value="e">e) no sentimentalismo, por meio do qual se reforça a alegria
+        presente em oposição à infância, marcada pela tristeza.</label>
+        
+                        <div class="resultado" id="resultado7"></div>
+        
+                        <button type="button" onclick="verificarRespostasIndividual(7, 'b')">Verificar Resposta</button>
+        
+                        </div>
+        
+                    <div id="pergunta8">
+        
+                             <label data-resposta-correta="c">8. (Enem cancelado 2009) Texto 1<br>
+       
+            Canção do exílio<br>
+    
+    <p>
+        Minha terra tem palmeiras,<br>
+        Onde canta o Sabiá;<br>
+        As aves, que aqui gorjeiam,<br>
+        Não gorjeiam como lá.<br>
+    </p>
+<p> 
+        Nosso céu tem mais estrelas,<br>
+        Nossas várzeas têm mais flores,<br>
+        Nossos bosques têm mais vida,<br>
+        Nossa vida mais amores.<br>
+        [...]<br>
+    </p>
+<p> 
+        Minha terra tem primores,<br>
+        Que tais não encontro eu cá;<br>
+        Em cismar — sozinho, à noite —<br>
+        Mais prazer eu encontro lá;<br>
+        Minha terra tem palmeiras<br>
+        Onde canta o Sabiá.<br>
+    </p>
+<p> 
+        Não permita Deus que eu morra,<br>
+        Sem que eu volte para lá;<br>
+        Sem que desfrute os primores<br>
+        Que não encontro por cá;<br>
+        Sem qu’inda aviste as palmeiras<br>
+        Onde canta o Sabiá.<br>
+    </p>
+        DIAS, G. Poesia e prosa completas.Rio de
+        Janeiro: Aguilar, 1998.<br>
+        
+        Texto 2<br>
+    <p>   
+        Canto de regresso à Pátria<br>
+    </p>
+<p> 
+        Minha terra tem palmares<br>
+        Onde gorjeia o mar<br>
+        Os passarinhos daqui<br>
+        Não cantam como os de lá<br>
+    </p>
+    <p>  
+        Minha terra tem mais rosas<br>
+        E quase tem mais amores<br>
+        Minha terra tem mais ouro<br>
+        Minha terra tem mais terra<br>
+    </p>
+<p> 
+        Ouro terra amor e rosas<br>
+        Eu quero tudo de lá<br>
+        Não permita Deus que eu morra<br>
+        Sem que volte para lá<br>
+    </p>
+     <p>
+        Não permita Deus que eu morra<br>
+        Sem que volte pra São Paulo<br>
+        Sem que eu veja a rua 15<br>
+        E o progresso de São Paulo<br>
+    </p>
+        ANDRADE, O. Cadernos de poesia do aluno
+        Oswald. São Paulo: Círculo do Livro, s/d.<br>
+        Os textos 1 e 2, escritos em contextos históricos e culturais
+        diversos, enfocam o mesmo motivo poético: a paisagem
+        brasileira entrevista a distância. Analisando-os, conclui-se
+        que</label>
+        
+                            </label>
+        
+                            <label for="a8"><input type="radio" id="a8" name="resposta8" value="a"> a) o ufanismo, atitude de quem se orgulha excessivamente
+        do país em que nasceu, é o tom de que se revestem os
+        dois textos.</label>
+        
+                            <label for="b8"><input type="radio" id="b8" name="resposta8" value="b"> b) a exaltação da natureza é a principal característica do
+        texto 2, que valoriza a paisagem tropical realçada no
+        texto 1.</label>
+        
+                            <label for="c8"><input type="radio" id="c8" name="resposta8" value="c"> c) o texto 2 aborda o tema da nação, como o texto 1, mas
+        sem perder a visão crítica da realidade brasileira.</label>
+        
+                            <label for="d8"><input type="radio" id="d8" name="resposta8"value="d"> d) o texto 1, em oposição ao texto 2, revela distanciamento
+        geográfico do poeta em relação à pátria.</label>
+        
+                            <label for="e8"><input type="radio" id="e8" name="resposta8" value="e"> e) ambos os textos apresentam ironicamente a paisagem
+        brasileira.</label>
+        
+                            <div class="resultado" id="resultado8"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(8, 'c')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta9">
+        
+                            <label data-resposta-correta="d">9. (Enem cancelado 2009) O sertão e o sertanejo
+        Ali começa o sertão chamado bruto. Nesses campos, tão
+        diversos pelo matiz das cores, o capim crescido e ressecado
+        pelo ardor do sol transforma-se em vicejante tapete de
+        relva, quando lavra o incêndio que algum tropeiro, por
+        acaso ou mero desenfado, ateia com uma faúlha do seu
+        isqueiro. Minando à surda na touceira, queda a vívida
+        centelha. Corra daí a instantes qualquer aragem, por débil
+        que seja, e levanta-se a língua de fogo esguia e trêmula,
+        como que a contemplar medrosa e vacilante os espaços
+        imensos que se alongam diante dela. O fogo, detido em
+        pontos, aqui, ali, a consumir com mais lentidão algum
+        estorvo, vai aos poucos morrendo até se extinguir de todo,
+        deixando como sinal da avassaladora passagem o alvacento
+        lençol, que lhe foi seguindo os velozes passos. Por toda a
+        parte melancolia; de todos os lados tétricas perspectivas. É
+        cair, porém, daí a dias copiosa chuva, e parece que uma
+        varinha de fada andou por aqueles sombrios recantos a
+        traçar às pressas jardins encantados e nunca vistos. Entra
+        tudo num trabalho íntimo de espantosa atividade.
+        Transborda a vida. TAUNAY, A. Inocência. São Paulo:
+        Ática, 1993 (adaptado).<br>
+        O romance romântico teve fundamental importância na
+        formação da ideia de nação. Considerando o trecho acima, é
+        possível reconhecer que uma das principais e permanentes
+        contribuições do Romantismo para construção da
+        identidade da nação é a</label>
+        
+                            </label>
+        
+                            <label for="a9"><input type="radio" id="a9" name="resposta9" value="a">a) possibilidade de apresentar uma dimensão desconhecida
+        da natureza nacional, marcada pelo subdesenvolvimento
+        e pela falta de perspectiva de renovação</label>
+        
+                            <label for="b9"><input type="radio" id="b9" name="resposta9" value="b">b) consciência da exploração da terra pelos colonizadores e
+        pela classe dominante local, o que coibiu a exploração
+        desenfreada das riquezas naturais do país.</label>
+        
+                            <label for="c9"><input type="radio" id="c9" name="resposta9" value="c">c) construção, em linguagem simples, realista e
+        documental, sem fantasia ou exaltação, de uma imagem
+        da terra que revelou o quanto é grandiosa a natureza
+        brasileira.</label>
+        
+                            <label for="d9"><input type="radio" id="d9" name="resposta9" value="d">d) expansão dos limites geográficos da terra, que promoveu
+        o sentimento de unidade do território nacional e deu a
+        conhecer os lugares mais distantes do Brasil aos
+        brasileiros.</label>
+        
+                            <label for="e9"><input type="radio" id="e9" name="resposta9" value="e">e) valorização da vida urbana e do progresso, em
+        detrimento do interior do Brasil, formulando um
+        conceito de nação centrado nos modelos da nascente
+        burguesia brasileira.</label>
+        
+                            <div class="resultado" id="resultado9"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(9, 'd')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta10">
+        
+                            <label data-resposta-correta="c">10. (Enem cancelado 2009) Pobre Isaura! Sempre e em toda
+        parte esta contínua importunação de senhores e de escravos,
+        que não a deixam sossegar um só momento! Como não
+        devia viver aflito e atribulado aquele coração! Dentro de
+        casa contava ela quatro inimigos, cada qual mais porfiado
+        em roubar-lhe a paz da alma, e torturar-lhe o coração: três
+        amantes, Leôncio, Belchior, e André, e uma êmula terrível
+        e desapiedada, Rosa. Fácil lhe fora repelir as importunações
+        e insolências dos escravos e criados; mas que seria dela,
+        quando viesse o senhor?!...<br>
+        GUIMARÃES, B. A escrava Isaura. São Paulo: Ática,
+        1995 (adaptado).<br>
+        A personagem Isaura, como afirma o título do romance, era
+        uma escrava. No trecho apresentado, os sofrimentos por
+        que passa a protagonista</label>
+        
+                            </label>
+        
+                            <label for="a10"><input type="radio" id="a10" name="resposta10" value="a">a) assemelham-se aos das demais escravas do país, o que
+        indica o estilo realista da abordagem do tema da
+        escravidão pelo autor do romance.</label>
+        
+                            <label for="b10"><input type="radio" id="b10" name="resposta10" value="b">b) demonstram que, historicamente, os problemas vividos
+        pelas escravas brasileiras, como Isaura, eram mais de
+        ordem sentimental do que física.</label>
+        
+                            <label for="c10"><input type="radio" id="c10" name="resposta10" value="c">c) diferem dos que atormentavam as demais escravas do
+        Brasil do século XIX, o que revela o caráter idealista da
+        abordagem do tema pelo autor do romance.</label>
+        
+                            <label for="d10"><input type="radio" id="d10" name="resposta10" value="d">d) indicam que, quando o assunto era o amor, as escravas
+        brasileiras, de acordo com a abordagem lírica do tema
+        pelo autor, eram tratadas como as demais mulheres da
+        sociedade.</label>
+        
+                            <label for="e10"><input type="radio" id="e10" name="resposta10" value="e">e) revelam a condição degradante das mulheres escravas no
+        Brasil, que, como Isaura, de acordo com a denúncia feita
+        pelo autor, eram importunadas e torturadas fisicamente
+        pelos seus senhores.</label>
+        
+                            <div class="resultado" id="resultado10"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(10, 'c')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta11">
+        
+                            <label data-resposta-correta="c">11. (Enem 2009) No decênio de 1870, Franklin Távora
+        defendeu a tese de que no Brasil havia duas literaturas
+        independentes dentro da mesma língua: uma do Norte e
+        outra do Sul, regiões segundo ele muito diferentes por
+        formação histórica, composição étnica, costumes,
+        modismos linguísticos etc. Por isso, deu aos romances
+        regionais que publicou o título geral de Literatura do
+        Norte. Em nossos dias, um escritor gaúcho, Viana Moog,
+        procurou mostrar com bastante engenho que no Brasil há,
+        em verdade, literaturas setoriais diversas, refletindo as
+        características locais.<br>
+        CANDIDO, A. A nova narrativa. A educação pela noite e
+        outros ensaios. São Paulo: Ática, 2003.<br>
+        Com relação à valorização, no romance regionalista
+        brasileiro, do homem e da paisagem de determinadas
+        regiões nacionais, sabe-se que</label>
+        
+                            </label>
+        
+                            <label for="a11"><input type="radio" id="a11" name="resposta11" value="a">a) o romance do Sul do Brasil se caracteriza pela temática
+        essencialmente urbana, colocando em relevo a formação
+        do homem por meio da mescla de características locais e
+        dos aspectos culturais trazidos de fora pela imigração
+        europeia.</label>
+        
+                            <label for="b11"><input type="radio" id="b11" name="resposta11" value="b">b) José de Alencar, representante, sobretudo, do romance
+        urbano, retrata a temática da urbanização das cidades
+        brasileiras e das relações conflituosas entre as raças.</label>
+        
+                            <label for="c11"><input type="radio" id="c11" name="resposta11" value="c">c) o romance do Nordeste caracteriza-se pelo acentuado
+        realismo no uso do vocabulário, pelo temário local,
+        expressando a vida do homem em face da natureza
+        agreste, e assume frequentemente o ponto de vista dos
+        menos favorecidos.</label>
+        
+                            <label for="d11"><input type="radio" id="d11" name="resposta11" value="d">d) a literatura urbana brasileira, da qual um dos expoentes é
+        Machado de Assis, põe em relevo a formação do homem
+        brasileiro, o sincretismo religioso, as raízes africanas e
+        indígenas que caracterizam o nosso povo</label>
+        
+                            <label for="e11"><input type="radio" id="e11" name="resposta11" value="e">e) Érico Veríssimo, Rachel de Queiroz, Simões Lopes Neto
+        e Jorge Amado são romancistas das décadas de 30 e 40
+        do século XX, cuja obra retrata a problemática do
+        homem urbano em confronto com a modernização do
+        país promovida pelo Estado Novo.</label>
+        
+                            <div class="resultado" id="resultado11"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(11, 'c')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta12">
+        
+                            <label data-resposta-correta="respostas12">12. (Enem cancelado 2009) Ouvir estrelas<\br>
+        “Ora, (direis) ouvir estrelas! Certo<br>
+        perdeste o senso!” E eu vos direi, no entanto,<br>
+        que, para ouvi-las, muita vez desperto<br>
+        e abro as janelas, pálido de espanto...<br>
+        E conversamos toda noite, enquanto<br>
+        a Via-Láctea, como um pálio aberto,<br>
+        cintila. E, ao vir o Sol, saudoso e em pranto,<br>
+        inda as procuro pelo céu deserto.<br>
+        Direis agora: “Tresloucado amigo!<br>
+        Que conversas com elas?” Que sentido<br>
+        tem o que dizem, quando estão contigo?”<br>
+        E eu vos direi: “Amai para entendê-las!<br>
+        Pois só quem ama pode ter ouvido<br>
+        Capaz de ouvir e de entender estrelas”.<br>
+        BILAC, Olavo. Ouvir estrelas. In: Tarde,
+        1919.<br>
+        Ouvir estrelas<br>
+        Ora, direis, ouvir estrelas! Vejo<br>
+        que estás beirando a maluquice extrema.<br>
+        No entanto o certo é que não perco o ensejo<br>
+        De ouvi-las nos programas de cinema.<br>
+        Não perco fita; e dir-vos-ei sem pejo<br>
+        que mais eu gozo se escabroso é o tema.<br>
+        Uma boca de estrela dando beijo<br>
+        é, meu amigo, assunto p’ra um poema.<br>
+        Direis agora: Mas, enfim, meu caro,<br>
+        As estrelas que dizem? Que sentido<br>
+        têm suas frases de sabor tão raro?<br>
+        Amigo, aprende inglês para entendê-las,<br>
+        Pois só sabendo inglês se tem ouvido<br>
+        Capaz de ouvir e de entender estrelas.<br>
+        TIGRE, Bastos. Ouvir estrelas. In:
+        Becker, I. Humor e humorismo: Antologia. São
+        Paulo: Brasiliense, 1961.<br>
+        A partir da comparação entre os poemas, verifica-se que,</label>
+        
+                            </label>
+        
+                            <label for="a12"><input type="radio" id="a12" name="resposta12" value="a">a) no texto de Bilac, a construção do eixo temático se deu
+        em linguagem denotativa, enquanto no de Tigre, em
+        linguagem conotativa.</label>
+        
+                            <label for="b12"><input type="radio" id="b12" name="resposta12" value="b">b) no texto de Bilac, as estrelas são inacessíveis, distantes, e
+        no texto de Tigre, são próximas, acessíveis aos que as
+        ouvem e as entendem</label>
+        
+                            <label for="c12"><input type="radio" id="c12" name="resposta12" value="c">c) no texto de Tigre, a linguagem é mais formal, mais
+        trabalhada, como se observa no uso de estruturas como
+        “dir-vos-ei sem pejo” e “entendê-las”.</label>
+        
+                            <label for="d12"><input type="radio" id="d12" name="resposta12" value="d">d) no texto de Tigre, percebe-se o uso da linguagem
+        metalinguística no trecho “Uma boca de estrela dando
+        beijo/é, meu amigo, assunto p’ra um poema.”</label>
+        
+                            <label for="e12"><input type="radio" id="e12" name="resposta12" value="e">e) no texto de Tigre, a visão romântica apresentada para
+        alcançar as estrelas é enfatizada na última estrofe de seu
+        poema com a recomendação de compreensão de outras
+        línguas.</label>
+        
+                            <div class="resultado" id="resultado12"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(12, 'd')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta13">
+        
+                            <label data-resposta-correta="respostas13">13. (Enem 2013) Tudo no mundo começou com um sim. <br>
+        Uma molécula disse sim a outra molécula e nasceu a vida.
+        Mas antes da pré-história havia a pré-história da pré-
+        história e havia o nunca e havia o sim. Sempre houve. Não
+        sei o quê, mas sei que o universo jamais começou.<br>
+        […]<br>
+        Enquanto eu tiver perguntas e não houver respostas
+        continuarei a escrever. Como começar pelo início, se as
+        coisas acontecem antes de acontecer? Se antes da pré-pré-
+        história já havia os monstros apocalípticos? Se esta história
+        não existe, passará a existir. Pensar é um ato. Sentir é um
+        fato. Os dois juntos — sou eu que escrevo o que estou
+        escrevendo. […] Felicidade? Nunca vi palavra mais doida,
+        inventada pelas nordestinas que andam por aí aos montes.
+        Como eu irei dizer agora, esta história será o resultado de
+        uma visão gradual — há dois anos e meio venho aos poucos
+        descobrindo os porquês. É visão da iminência de. De quê?
+        Quem sabe se mais tarde saberei. Como que estou
+        escrevendo na hora mesma em que sou lido. Só não inicio
+        pelo fim que justificaria o começo — como a morte parece
+        dizer sobre a vida — porque preciso registrar os fatos
+        antecedentes.<br>
+        LISPECTOR, C. A hora da estrela. Rio de Janeiro: Rocco,
+        1988 (fragmento).<br>
+        A elaboração de uma voz narrativa peculiar acompanha a
+        trajetória literária de Clarice Lispector, culminada com a
+        obra A hora da estrela, de 1977, ano da morte da escritora.
+        Nesse fragmento, nota-se essa peculiaridade porque o
+        narrador </label>
+        
+                            </label>
+        
+                            <label for="a13"><input type="radio" id="a13" name="resposta13" value="a">a) observa os acontecimentos que narra sob uma ótica
+        distante, sendo indiferente aos fatos e às personagens.</label>
+        
+                            <label for="b13"><input type="radio" id="b13" name="resposta13" value="b">b) relata a história sem ter tido a preocupação de investigar
+        os motivos que levaram aos eventos que a compõem.</label>
+        
+                            <label for="c13"><input type="radio" id="c13" name="resposta13" value="c">c) revela-se um sujeito que reflete sobre questões
+        existenciais e sobre a construção do discurso.</label>
+        
+                            <label for="d13"><input type="radio" id="d13" name="resposta13" value="d">d) admite a dificuldade de escrever uma história em razão
+        da complexidade para escolher as palavras exatas.</label>
+        
+                            <label for="e13"><input type="radio" id="e13" name="resposta13" value="e">e) propõe-se a discutir questões de natureza filosófica e
+        metafísica, incomuns na narrativa de ficção.</label>
+        
+                            <div class="resultado" id="resultado13"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(13, 'c')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta14">
+        
+                            <label data-resposta-correta="respostas14">14. (Enem 2012) Aquele bêbado<br>
+        — Juro nunca mais beber — e fez o sinal da cruz com os
+        indicadores. Acrescentou: — Álcool.<br>
+        O mais, ele achou que podia beber. Bebia paisagens,
+        músicas de Tom Jobim, versos de Mário Quintana. Tomou
+        um pileque de Segall. Nos fins de semana embebedava-se
+        de Índia Reclinada, de Celso Antônio.<br>
+        — Curou-se 100% de vício — comentavam os amigos.<br>
+        Só ele sabia que andava bêbado que nem um gambá.<br>
+        Morreu de etilismo abstrato, no meio de uma carraspana de
+        pôr do sol no Leblon, e seu féretro ostentava inúmeras
+        coroas de ex-alcoólatras anônimos.<br>
+        ANDRADE, C. D. Contos plausíveis. Rio de Janeiro:
+        Record, 1991.<br>
+        A causa mortis do personagem, expressa no último
+        parágrafo, adquire um efeito irônico no texto porque, ao
+        longo da narrativa, ocorre uma </label>
+        
+                            </label>
+        
+                            <label for="a14"><input type="radio" id="a14" name="resposta14" value="a">a) metaforização do sentido literal do verbo “beber”.</label>
+        
+                            <label for="b14"><input type="radio" id="b14" name="resposta14" value="b">b) aproximação exagerada da estética abstracionista.</label>
+        
+                            <label for="c14"><input type="radio" id="c14" name="resposta14" value="c">c) apresentação gradativa da coloquialidade da linguagem.</label>
+        
+                            <label for="d14"><input type="radio" id="d14" name="resposta14" value="d">d) exploração hiperbólica da expressão “inúmeras coroas”.</label>
+        
+                            <label for="e14"><input type="radio" id="e14" name="resposta14" value="e">e) citação aleatória de nomes de diferentes artistas.</label>
+        
+                            <div class="resultado" id="resultado14"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(14, 'a')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta15">
+        
+                            <label data-resposta-correta="respostas15">15. (Enem 2012) Verbo ser<\br>
+        QUE VAI SER quando crescer? Vivem perguntando em
+        redor. Que é ser? É ter um corpo, um jeito, um nome?
+        Tenho os três. E sou? Tenho de mudar quando crescer?
+        Usar outro nome, corpo ou jeito? Ou a gente só principia a
+        ser quando cresce? É terrível, ser? Dói? É bom? É triste?
+        Ser: pronunciado tão depressa, e cabe tantas coisas? Repito:
+        ser, ser, ser. Er. R. Que vou ser quando crescer? Sou
+        obrigado a? Posso escolher? Não dá para entender. Não vou
+        ser. Não quero ser. Vou crescer assim mesmo. Sem ser.
+        Esquecer.<br>
+        ANDRADE, C. D. Poesia e prosa. Rio de Janeiro: Nova
+        Aguilar, 1992.<br>
+        A inquietação existencial do autor com a autoimagem
+        corporal e a sua corporeidade se desdobra em questões
+        existenciais que têm origem</label>
+        
+                            </label>
+        
+                            <label for="a15"><input type="radio" id="a15" name="resposta15" value="a">a) no conflito do padrão corporal imposto contra as
+        convicções de ser autêntico e singular.</label>
+        
+                            <label for="b15"><input type="radio" id="b15" name="resposta15" value="b">b) na aceitação das imposições da sociedade seguindo a
+        influência de outros.</label>
+        
+                            <label for="c15"><input type="radio" id="c15" name="resposta15" value="c">c) na confiança no futuro, ofuscada pelas tradições e
+        culturas familiares.</label>
+        
+                            <label for="d15"><input type="radio" id="d15" name="resposta15" value="d">d) no anseio de divulgar hábitos enraizados, negligenciados
+        por seus antepassados.</label>
+        
+                            <label for="e15"><input type="radio" id="e15" name="resposta15" value="e">e) na certeza da exclusão, revelada pela indiferença de seus
+        pares.</label>
+        
+                            <div class="resultado" id="resultado15"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(15, 'a')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta16">
+        
+                            <label data-resposta-correta="respostas16">16. (Enem 2012) O trovador<br>
+        Sentimentos em mim do asperamente<br>
+        dos homens das primeiras eras...<br>
+        As primaveras de sarcasmo<br>
+        intermitentemente no meu coração arlequinal...<br>
+        Intermitentemente...<br>
+        Outras vezes é um doente, um frio<br>
+        na minha alma doente como um longo som redondo...<br>
+        Cantabona! Cantabona!<br>
+        Dlorom ...<br>
+        Sou um tupi tangendo um alaúde!<br>
+        ANDRADE, M. In: MANFIO, D. Z. (Org.) Poesias
+        completas de Mário de Andrade. Belo Horizonte: Itatiaia,
+        2005.<br>
+        Cara ao Modernismo, a questão da identidade nacional é
+        recorrente na prosa e na poesia de Mário de Andrade. Em O
+        trovador, esse aspecto é
+        </label>
+        
+                            </label>
+        
+                            <label for="a16"><input type="radio" id="a16" name="resposta16" value="a">a) abordado subliminarmente, por meio de expressões como
+        “coração arlequinal” que, evocando o carnaval, remete à
+        brasilidade.</label>
+        
+                            <label for="b16"><input type="radio" id="b16" name="resposta16" value="b">b) verificado já no título, que remete aos repentistas
+        nordestinos, estudados por Mário de Andrade em suas
+        viagens e pesquisas folclóricas.</label>
+        
+                            <label for="c16"><input type="radio" id="c16" name="resposta16" value="c">c) lamentado pelo eu lírico, tanto no uso de expressões
+        como “Sentimentos em mim do asperamente” (v. 1),
+        “frio” (v. 6), “alma doente” (v. 7), como pelo som triste
+        do alaúde “Dlorom” (v. 9).</label>
+        
+                            <label for="d16"><input type="radio" id="d16" name="resposta16" value="d">d) problematizado na oposição tupi (selvagem) x alaúde
+        (civilizado), apontando a síntese nacional que seria
+        proposta no Manifesto Antropófago, de Oswaldo de
+        Andrade.</label>
+        
+                            <label for="e16"><input type="radio" id="e16" name="resposta16" value="e">e) exaltado pelo eu lírico, que evoca os “sentimentos dos
+        homens das primeiras eras” para mostrar o orgulho
+        brasileiro por suas raízes indígenas.</label>
+        
+                            <div class="resultado" id="resultado16"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(16, 'd')">Verificar Resposta</button>
+        
+                        </div>
+        
+                       
+        
+                        <div id="pergunta17">
+        
+                        <label data-resposta-correta="respostas17">17. (Enem 2011) Texto I<br>
+        O meu nome é Severino,<br>
+        não tenho outro de pia.<br>
+        Como há muitos Severinos,<br>
+        que é santo de romaria,<br>
+        deram então de me chamar<br>
+        Severino de Maria;<br>
+        como há muitos Severinos<br>
+        com mães chamadas Maria,<br>
+        fiquei sendo o da Maria,<br>
+        do finado Zacarias,<br>
+        mas isso ainda diz pouco:<br>
+        há muitos na freguesia,<br>
+        por causa de um coronel<br>
+        que se chamou Zacarias<br>
+        e que foi o mais antigo<br>
+        senhor desta sesmaria.<br>
+        Como então dizer quem fala<br>
+        ora a Vossas Senhorias?<br>
+        MELO NETO, J. C. Obras completa. Rio de Janeiro:
+        Aguilar, 1994 (fragmento)<br>
+        
+        Texto II<br>
+        
+        João Cabral, que já emprestara sua voz ao rio, transfere-a,
+        aqui, ao retirante Severino, que, como o Capibaribe,
+        também segue no caminho do Recife. A autoapresentação
+        do personagem, na fala inicial do texto, nos mostra um
+        Severino que, quanto mais se define, menos se
+        individualiza, pois seus traços biográficos são sempre
+        partilhados por outros homens.<br>
+        SECCHIN, A. C. João Cabral: a poesia do menos. Rio de
+        Janeiro: Topbooks, 1999 (fragmento).<br>
+        Com base no trecho de Morte e Vida Severina (Texto I) e
+        na análise crítica (Texto II), observa-se que a relação entre
+        o texto poético e o contexto social a que ele faz referência
+        aponta para um problema social expresso literariamente
+        pela pergunta “Como então dizer quem fala/ ora a Vossas
+        Senhorias?”. A resposta à pergunta expressa no poema é
+        dada por meio da
+           </label>
+        
+                            </label>
+        
+                            <label for="a17"><input type="radio" id="a17" name="resposta17" value="a">a) descrição minuciosa dos traços biográficos personagem narrador.</label>
+        
+                            <label for="b17"><input type="radio" id="b17" name="resposta17" value="b">b) construção da figura do retirante nordestino como um
+        homem resignado com a sua situação.</label>
+        
+                            <label for="c17"><input type="radio" id="c17" name="resposta17" value="c">c) representação, na figura do personagem-narrador, de
+        outros Severinos que compartilham sua condição.</label>
+        
+                            <label for="d17"><input type="radio" id="d17" name="resposta17" value="d">d) apresentação do personagem-narrador como uma
+        projeção do próprio poeta em sua crise existencial.</label>
+        
+                            <label for="e17"><input type="radio" id="e17" name="resposta17" value="e">e) descrição de Severino, que, apesar de humilde, orgulhase de ser descendente do coronel Zacarias.</label>
+        
+                            <div class="resultado" id="resultado17"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(17, 'c')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta18">
+        
+                        <label data-resposta-correta="respostas18">18. (Enem 2010) Texto I<br>
+        Logo depois transferiram para o trapiche o
+        depósito dos objetos que o trabalho do dia lhes
+        proporcionava.<br>
+        Estranhas coisas entraram então para o trapiche.
+        Não mais estranhas, porém, que aqueles meninos, moleques
+        de todas as cores e de idades as mais variadas, desde os
+        nove aos dezesseis anos, que à noite se estendiam pelo
+        assoalho e por debaixo da ponte e dormiam, indiferentes ao
+        vento que circundava o casarão uivando, indiferentes à
+        chuva que muitas vezes os lavava, mas com os olhos
+        puxados para as luzes dos navios, com os ouvidos presos às
+        canções que vinham das embarcações...<br>
+        AMADO, J. Capitães da Areia. São Paulo: Companhia das
+        Letras, 2008 (fragmento).<br>
+        
+        Texto II<br>
+        
+        À margem esquerda do rio Belém, nos fundos do
+        mercado de peixe, ergue-se o velho ingazeiro – ali os
+        bêbados são felizes. Curitiba os considera animais sagrados,
+        provê as suas necessidades de cachaça e pirão. No trivial
+        contentavam-se com as sobras do mercado.<br>
+        TREVISAN, D. 35 noites de paixão: contos escolhidos. Rio
+        de Janeiro: BestBolso, 2009 (fragmento).<br>
+        Sob diferentes perspectivas, os fragmentos citados são
+        exemplos de uma abordagem literária recorrente na
+        literatura brasileira do século XX. Em ambos os textos</label>
+        
+                            </label>
+        
+                            <label for="a18"><input type="radio" id="a18" name="resposta18" value="a">a) a linguagem afetiva aproxima os narradores dos
+        personagens marginalizados.</label>
+        
+                            <label for="b18"><input type="radio" id="b18" name="resposta18" value="b">b) a ironia marca o distanciamento dos narradores em
+        relação aos personagens.</label>
+        
+                            <label for="c18"><input type="radio" id="c18" name="resposta18" value="c">c) o detalhamento do cotidiano dos personagens revela a
+        sua origem social.</label>
+        
+                            <label for="d18"><input type="radio" id="d18" name="resposta18" value="d">d) o espaço onde vivem os personagens é uma das marcas
+        de sua exclusão.</label>
+        
+                            <label for="e18"><input type="radio" id="e18" name="resposta18" value="e">e) a crítica à indiferença da sociedade pelos marginalizados
+        é direta.</label>
+        
+                            <div class="resultado" id="resultado18"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(18, 'd')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta19">
+        
+                        <label data-resposta-correta="respostas19">19. (Enem 2010) Após estudar na Europa, Anita Malfatti
+        retornou ao Brasil com uma mostra que abalou a cultura
+        nacional do início do século XX. Elogiada por seus mestres
+        na Europa, Anita se considerava pronta para mostrar seu
+        trabalho no Brasil, mas enfrentou as duras críticas de
+        Monteiro Lobato. Com a intenção de criar uma arte que
+        valorizasse a cultura brasileira, Anita Malfatti e outros
+        artistas modernistas</label>
+        
+                            </label>
+        
+                            <label for="a19"><input type="radio" id="a19" name="resposta19" value="a">a) buscaram libertar a arte brasileira das normas acadêmicas
+        europeias, valorizando as cores, a originalidade e os
+        temas nacionais.</label>
+        
+                            <label for="b19"><input type="radio" id="b19" name="resposta19" value="b">b) defenderam a liberdade limitada de uso da cor, até então
+        utilizada de forma irrestrita, afetando a criação artística
+        nacional.</label>
+        
+                            <label for="c19"><input type="radio" id="c19" name="resposta19" value="c">c) representaram a ideia de que a arte deveria copiar
+        fielmente a natureza, tendo como finalidade a prática
+        educativa.</label>
+        
+                            <label for="d19"><input type="radio" id="d19" name="resposta19" value="d">d) mantiveram de forma fiel a realidade nas figuras
+        retratadas, defendendo uma liberdade artística ligada à
+        tradição acadêmica.</label>
+        
+                            <label for="e19"><input type="radio" id="e19" name="resposta19" value="e">e) buscaram a liberdade na composição de suas figuras,
+        respeitando limites de temas abordados.</label>
+        
+                            <div class="resultado" id="resultado19"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(19, 'a')">Verificar Resposta</button>
+        
+                        </div>
+        
+                        <div id="pergunta20">
+        
+                        <label data-resposta-correta="respostas20">20. (Enem 2010) “Todas as manhãs quando acordo,
+        experimento um prazer supremo: o de ser Salvador Dalí.”<br>
+        NÉRET, G. Salvador Dalí. Taschen, 1996.<br>
+        Assim escreveu o pintor dos “relógios moles” e das “girafas
+        em chamas” em 1931. Esse artista excêntrico deu apoio ao
+        general Franco durante a Guerra Civil Espanhola e, por esse
+        motivo, foi afastado do movimento surrealista por seu líder,
+        André Breton. Dessa forma, Dalí criou seu próprio estilo,
+        baseado na interpretação dos sonhos e nos estudos de
+        Sigmund Freud, denominado “método de interpretação
+        paranoico”. Esse método era constituído por textos visuais
+        que demonstram imagens</label>
+        
+                            </label>
+        
+                            <label for="a20"><input type="radio" id="a20" name="resposta20" value="a">a) do fantástico, impregnado de civismo pelo governo
+        espanhol, em que a busca pela emoção e pela
+        dramaticidade desenvolveram um estilo incomparável.</label>
+        
+                            <label for="b20"><input type="radio" id="b20" name="resposta20"  value="b">b) do onírico, que misturava sonho com realidade e
+        interagia refletindo a unidade entre o consciente e
+        o inconsciente como um universo único ou pessoal.</label>
+        
+                            <label for="c20"><input type="radio" id="c20" name="resposta20"  value="c">c) da linha inflexível da razão, dando vazão a uma forma de
+        produção despojada no traço, na
+        temática e nas formas vinculadas ao real.</label>
+        
+                            <label for="d20"><input type="radio" id="d20" name="resposta20"  value="d">d) do reflexo que, apesar do termo “paranoico”, possui
+        sobriedade e elegância advindas de uma
+        técnica de cores discretas e desenhos precisos.</label>
+        
+                            <label for="e20"><input type="radio" id="e20" name="resposta20" value="e">e) da expressão e intensidade entre o consciente e a
+        liberdade, declarando o amor pela forma de
+        conduzir o enredo histórico dos personagens retratados.</label>
+        
+                            <div class="resultado" id="resultado20"></div>
+        
+                            <button type="button" onclick="verificarRespostasIndividual(20, 'b')">Verificar Resposta</button>
+        
+                        </div>
+        
+            <!-- Adicione mais perguntas conforme necessário -->
+        
+         
+        
+            <button id="ir" type="button" onclick="verificarRespostas()">Enviar Respostas</button>
+        
+          </form>
+        
+         
+        
+          <script>
+        
+            function verificarRespostas() {
+        
+              verificarRespostasIndividual(1, "c");
+        
+              verificarRespostasIndividual(2, "d");
+        
+              verificarRespostasIndividual(3, "d");
+        
+              verificarRespostasIndividual(4, "b");
+        
+              verificarRespostasIndividual(5, "d");
+        
+              verificarRespostasIndividual(6, "d");
+        
+              verificarRespostasIndividual(7, "b");
+        
+              verificarRespostasIndividual(8, "c");
+        
+              verificarRespostasIndividual(9, "d");
+        
+              verificarRespostasIndividual(10, "c");
+        
+              verificarRespostasIndividual(11, "c");
+        
+              verificarRespostasIndividual(12, "d");
+        
+              verificarRespostasIndividual(13, "c");
+        
+              verificarRespostasIndividual(14, "a");
+        
+              verificarRespostasIndividual(15, "a");
+        
+              verificarRespostasIndividual(16, "d");
+        
+              verificarRespostasIndividual(17, "c");
+        
+              verificarRespostasIndividual(18, "d");
+        
+              verificarRespostasIndividual(19, "a");
+        
+              verificarRespostasIndividual(20, "b");
+        
+              // Adicione chamadas para mais perguntas conforme necessário
+        
+            }
+ 
+    function verificarRespostasIndividual(pergunta, respostaCorreta) {
+      const respostaSelecionada = document.querySelector(`input[name="resposta${pergunta}"]:checked`);
+      const resultadoElement = document.getElementById(`resultado${pergunta}`);
+ 
+      if (!respostaSelecionada) {
+        resultadoElement.textContent = "Por favor, preencha todas as respostas.";
+        resultadoElement.className = "resposta-incorreta";
+        return;
+      }
+ 
+      const respostaSelecionadaValue = respostaSelecionada.value;
+ 
+      if (respostaSelecionadaValue === respostaCorreta) {
+        resultadoElement.textContent = `Parabéns! A resposta está correta.`;
+        resultadoElement.className = "resposta-correta";
+      } else {
+        resultadoElement.textContent = `Infelizmente, a resposta está incorreta.`;
+        resultadoElement.className = "resposta-incorreta";
+      }
+    }
+  </script>
+ 
+</body>
+</html>
+ 
+ 
+ 
